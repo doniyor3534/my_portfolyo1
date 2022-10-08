@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import { useSelector } from 'react-redux';
-import {NavLink} from 'react-router-dom'
+import {NavLink,Link} from 'react-router-dom'
 import {MenuOutlined,UpCircleOutlined} from '@ant-design/icons'
 
 function Navbar() {
@@ -9,12 +9,12 @@ function Navbar() {
     console.log(navcluch);
     return (
         <nav className='container'>
-                <div className="nav_logo"><img src="./img/logo1.png" alt="" /></div>
+                <Link to={"/"} className="nav_logo"><img src="./img/logo1.png" alt="" /></Link>
             <ul className={navcluch ?'active':''}>
-                <li><NavLink to='/home'  activeclassName="active ">Home</NavLink></li>
-                <li><NavLink to='/aboutme' activeclassName="active">About me</NavLink></li>
-                <li><NavLink to='/portfolyo' activeclassName="active">Portfolio</NavLink></li>
-                <li><NavLink to='/contact' activeclassName="active">Contact</NavLink></li>
+                <li><NavLink to={"/"}  activeClassName="active ">Home</NavLink></li>
+                <li><NavLink to={"/aboutme"} activeClassName="active ">About me</NavLink></li>
+                <li><NavLink to={"/portfolyo"} activeClassName="active ">Portfolio</NavLink></li>
+                <li><NavLink to={"/contact"} activeClassName="active ">Contact</NavLink></li>
             </ul>
             <button className='burger' onClick={()=>setNavcluch(!navcluch)}>{navcluch?<UpCircleOutlined />:<MenuOutlined />}</button>
         </nav>

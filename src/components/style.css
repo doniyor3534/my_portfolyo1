@@ -4,7 +4,6 @@
     box-sizing: border-box;
     text-decoration: none !important;
     list-style: none;
-    color: white;
 }
 
 
@@ -90,6 +89,11 @@ nav a.active:before {
     transform: translateX(-50%) scale(1);
 }
 
+.nav_logo::after,
+.nav_logo::before {
+    display: none;
+}
+
 .nav_logo img {
     width: 100px;
     height: 70px;
@@ -152,6 +156,7 @@ nav a.active:before {
     margin-top: 20px;
     transition: all 0.2s linear;
 }
+
 .btnContactme:hover {
     padding: 10px 25px;
     background: linear-gradient(87.32deg, #a47703 4.47%, #815705 95.53%);
@@ -172,6 +177,40 @@ nav a.active:before {
     height: 100%;
 }
 
+.anticon svg {
+    color: orange !important;
+}
+
+.homePage2 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+    padding: 40px 0;
+}
+
+.homCard {
+    width: 100%;
+    height: 100%;
+    background: var(--bg2);
+    border-radius: 7px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.homCard img {
+    width: 70px;
+}
+
+.homCard p {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--kulrang);
+    margin-top: 5px;
+}
 
 
 
@@ -187,6 +226,55 @@ nav a.active:before {
 
 
 
+
+
+
+
+/* ///////////Footer///////////////// */
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    background-color: var(--bg);
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.footer a,
+.footer p {
+    font-weight: 300;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: var(--kulrang);
+}
+
+.footer a {
+    margin-top: 10px;
+}
+
+.footer a:hover,
+.footer p:hover {
+    color: var(--oq);
+}
+
+.footerlogo {
+    display: flex;
+    gap: 15px;
+}
+
+.footerlogo img {
+    width: 60px;
+    height: 60px;
+}
+
+.footerTopIcon {
+    transition: all 0.4s linear;
+}
+
+.footerTopIcon:hover {
+    transform: rotate(360deg);
+}
 
 
 
@@ -201,6 +289,9 @@ nav a.active:before {
 
 
 @media(max-width:420px) {
+    .ant-modal-body> div{
+        width: 300px !important;
+    }
     .burger {
         display: inline-block;
         background-color: transparent;
@@ -236,11 +327,49 @@ nav a.active:before {
         gap: 20px;
         padding: 25px;
     }
+
     .homePge1 {
-        width: 100%;
-        height: auto;
-        display: grid;
         grid-template-columns: repeat(1, auto);
-        padding: 50px 0;
+        padding: 10px;
     }
+    .homePage2 {
+        grid-template-columns: repeat(1, auto);
+    }
+    .footer {
+        grid-template-columns: repeat(1, auto);
+        gap: 25px ;
+    }
+    .footerlogo {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .homeTitle h4 {
+        font-size: 28px;
+    }
+    
+    .homeTitle h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .homeTitle p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        color: var(--kulrang);
+    }
+
+
+
+
+
+
+
+
+
+
 }
