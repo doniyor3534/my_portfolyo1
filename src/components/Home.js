@@ -28,12 +28,13 @@ const Home = () => {
           console.log('Clicked cancel button');
           setOpen(false);
      };
-     const modal=(video)=>{
+     const modal = (video) => {
           setModalText(video)
           showModal()
      }
      return (
           <div className='Home container-fluid p-0'>
+               {/* //Page1 */}
                <div className="homePge1 container ">
                     <div className="homeTitle">
                          <h4>Hello</h4>
@@ -45,26 +46,50 @@ const Home = () => {
                          <img src="./img/Gleb.png" alt="" />
                     </div>
                </div>
+               {/* //Page1 */}
+               {/* //Page2 */}
                <div className="homePage2 container">
                     {
                          HomeCardsmass.map((val) => (
-                              <div className="homCard" key={val.id} onClick={()=>modal(val.video)}>
+                              <div className="homCard" key={val.id} onClick={() => modal(val.video)}>
                                    <img src={val.img} alt={val.name} />
                                    <p>{val.name}</p>
                               </div>
                          ))
                     }
+                    <Modal
+                         title="Title"
+                         open={open}
+                         onOk={handleOk}
+                         confirmLoading={confirmLoading}
+                         onCancel={handleCancel}
+                         width="min-content"
+                    >
+                         <ReactPlayer url={modalText} />
+                    </Modal>
                </div>
-               <Modal
-                    title="Title"
-                    open={open}
-                    onOk={handleOk}
-                    confirmLoading={confirmLoading}
-                    onCancel={handleCancel}
-                    width="min-content"
-               >
-                   <ReactPlayer url={modalText} />
-               </Modal>
+               {/* //Page2 */}
+               {/* //Page3 */}
+               <div className="homePage3 container">
+                    <div className="cardmaxM">
+                         <div className="cardmax">
+                              <div className="cardmin cardmin1"><img src="./img/html.png" alt=""  /></div>
+                              <div className="cardmin cardmin2"><img src="./img/css.png" alt=""  /></div>
+                              <div className="cardmin cardmin3"><img src="./img/sass.png" alt=""  /></div>
+                              <div className="cardmin cardmin4"><img src="./img/bootstrap.png" alt=""  /></div>
+                              <div className="cardmin cardmin5"><img src="./img/javascript.png" alt=""  /></div>
+                              <div className="cardmin cardmin6"><img src="./img/react.png" alt=""  /></div>
+                              <div className="cardmin cardmin7"><img src="./img/redux.png" alt=""  /></div>
+                              <div className="cardmin cardmin8"><img src="./img/github.png" alt=""  /></div>
+                         </div>
+                              <div className="cardimg"><img src="./img/uzim.jpg" alt="" /></div>
+                    </div>
+               </div>
+               {/* //Page3 */}
+               <div className="homePage4">
+                    <img src="" alt="" />
+                    <p>Hammaga yana salom! Shunday qilib, siz mening ismim  Doniyorbek ekanligini allaqachon bilasiz. O'zim haqimda bir oz sozlasam: talaba, 25 yosh, sportchi-futbolchi, bolaligimdan ijodni yaxshi ko'rgaman, Uzbekistonning Namangan viloyatida  yashayman. Nima uchun dasturlash? Hammasi oddiy - bu menga yoqadi, kelajak kasbi, buning yordamida men o'zimni ta'minlay olaman va orzuimni amalga oshira olaman - sayohat, hozir men veb-dizayn, front-end va back-end ishlab chiqish, kalitlarga topshirilgan veb-saytlar bo'yicha ixtisoslashganman. Nega meni tanlashing kerak? Men har bir buyurtmaga katta mas'uliyat va mehr bilan yondashaman, chunki men  plagiat va beparvolikni istisno qilishni, loyihani, mijozni va uning maqsadli auditoriyasini to'liq o'rganishni, sifatli ishlashni, buyurtmani tez va o'ziga xos tarzda bajarishga harakat qilaman. iloji boricha barcha tahrirlar va istaklarni hisobga olgan holda. Menga ishoning, loyihangiz uchun maksimal daromad olasiz, asablaringizni va vaqtingizni tejaysiz. Agar siz men bilan ishlamoqchi bolsangiz, ko'proq narsani bilmoqchi bo'lsangiz yoki mening xizmatlarimdan foydalanmoqchi bo'lsangiz, men quyida barcha kontaktlarimni taqdim etaman.</p>
+               </div>
           </div>
      );
 }
