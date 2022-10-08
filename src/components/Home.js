@@ -87,7 +87,7 @@ const Home = () => {
                </div>
                {/* //Page3 */}
                <div className="homePage4">
-                    <img src="" alt="" />
+                    <img src="xwsxsxss" alt="" />
                     <p>Hammaga yana salom! Shunday qilib, siz mening ismim  Doniyorbek ekanligini allaqachon bilasiz. O'zim haqimda bir oz sozlasam: talaba, 25 yosh, sportchi-futbolchi, bolaligimdan ijodni yaxshi ko'rgaman, Uzbekistonning Namangan viloyatida  yashayman. Nima uchun dasturlash? Hammasi oddiy - bu menga yoqadi, kelajak kasbi, buning yordamida men o'zimni ta'minlay olaman va orzuimni amalga oshira olaman - sayohat, hozir men veb-dizayn, front-end va back-end ishlab chiqish, kalitlarga topshirilgan veb-saytlar bo'yicha ixtisoslashganman. Nega meni tanlashing kerak? Men har bir buyurtmaga katta mas'uliyat va mehr bilan yondashaman, chunki men  plagiat va beparvolikni istisno qilishni, loyihani, mijozni va uning maqsadli auditoriyasini to'liq o'rganishni, sifatli ishlashni, buyurtmani tez va o'ziga xos tarzda bajarishga harakat qilaman. iloji boricha barcha tahrirlar va istaklarni hisobga olgan holda. Menga ishoning, loyihangiz uchun maksimal daromad olasiz, asablaringizni va vaqtingizni tejaysiz. Agar siz men bilan ishlamoqchi bolsangiz, ko'proq narsani bilmoqchi bo'lsangiz yoki mening xizmatlarimdan foydalanmoqchi bo'lsangiz, men quyida barcha kontaktlarimni taqdim etaman.</p>
                </div>
           </div>
