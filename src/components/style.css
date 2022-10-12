@@ -211,21 +211,24 @@ nav a.active:before {
     color: var(--kulrang);
     margin-top: 5px;
 }
-.homePage3{
+
+.homePage3 {
     width: 100%;
     padding: 100px 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.cardmaxM{
+
+.cardmaxM {
     width: 350px;
     height: 350px;
     border-radius: 50%;
     position: relative;
-    box-shadow: #000000 5px 5px 50px -5px ;
+    box-shadow: #000000 5px 5px 50px -5px;
 }
-.cardmax{
+
+.cardmax {
     width: 350px;
     height: 350px;
     border-radius: 50%;
@@ -235,68 +238,85 @@ nav a.active:before {
     position: relative;
     animation: cardmax 17s linear infinite;
 }
-@keyframes cardmax{
-   0%{transform: rotate(0);}
-   100%{transform: rotate(360deg);}
+
+@keyframes cardmax {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
-.cardmin{
+
+.cardmin {
     width: 50px;
     height: 50px;
     cursor: pointer;
 }
-.cardmin img{
+
+.cardmin img {
     width: 50px;
     height: 50px;
 }
-.cardmin1{
+
+.cardmin1 {
     position: absolute;
     top: -35px;
     left: 40px;
     transform: rotate(-28deg);
 }
-.cardmin2{
+
+.cardmin2 {
     position: absolute;
     top: 120px;
     left: -65px;
-    transform: rotate(-85deg);  
+    transform: rotate(-85deg);
 }
-.cardmin3{
+
+.cardmin3 {
     position: absolute;
     top: 80%;
     left: -25px;
     transform: rotate(-125deg);
 }
-.cardmin4{
+
+.cardmin4 {
     position: absolute;
     bottom: -65px;
     left: 35%;
     transform: rotate(-170deg);
 }
-.cardmin5{
+
+.cardmin5 {
     position: absolute;
     bottom: -15px;
     right: 10px;
     transform: rotate(135deg);
 }
-.cardmin6{
+
+.cardmin6 {
     position: absolute;
     top: 55%;
     right: -60px;
     transform: rotate(100deg);
 }
-.cardmin7{
+
+.cardmin7 {
     position: absolute;
     top: 50px;
     right: -35px;
     transform: rotate(60deg);
 }
-.cardmin8{
+
+.cardmin8 {
     position: absolute;
     top: -45px;
     right: 65px;
     transform: rotate(20deg);
 }
-.cardimg{
+
+.cardimg {
     width: 350px;
     height: 350px;
     border-radius: 50%;
@@ -304,10 +324,24 @@ nav a.active:before {
     top: 0;
     left: 0;
 }
-.cardimg img{
+
+.cardimg img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+}
+
+.homePage4 {
+    padding: 50px 0;
+}
+
+.homePage4 p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    font-style: italic;
+    letter-spacing: 0.01em;
+    color: var(--oq);
 }
 
 
@@ -386,9 +420,10 @@ nav a.active:before {
 
 
 @media(max-width:420px) {
-    .ant-modal-body> div{
+    .ant-modal-body>div {
         width: 300px !important;
     }
+
     .burger {
         display: inline-block;
         background-color: transparent;
@@ -429,28 +464,32 @@ nav a.active:before {
         grid-template-columns: repeat(1, auto);
         padding: 10px;
     }
+
     .homePage2 {
         grid-template-columns: repeat(1, auto);
     }
+
     .footer {
         grid-template-columns: repeat(1, auto);
-        gap: 25px ;
+        gap: 25px;
     }
+
     .footerlogo {
         display: flex;
         gap: 15px;
         align-items: center;
         justify-content: space-around;
     }
+
     .homeTitle h4 {
         font-size: 28px;
     }
-    
+
     .homeTitle h2 {
         font-size: 32px;
         line-height: 40px;
     }
-    
+
     .homeTitle p {
         font-weight: 300;
         font-size: 18px;
@@ -460,10 +499,117 @@ nav a.active:before {
         color: var(--kulrang);
     }
 
+    .cardmaxM {
+        width: 210px;
+        height: 210px;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: #000000 5px 5px 50px -5px;
+    }
 
+    .cardmax {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        animation: cardmax 17s linear infinite;
+    }
 
+    .cardimg {
+        width: 100%;
+        height: 100%;
+    }
 
+    .cardmin {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
 
+    .cardmin img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .cardmin1 {
+        position: absolute;
+        top: -30px;
+        left: -10px;
+        transform: rotate(-38deg);
+    }
+
+    .cardmin2 {
+        position: absolute;
+        top: 70px;
+        left: -62px;
+        transform: rotate(-85deg);
+    }
+
+    .cardmin3 {
+        position: absolute;
+        top: 80%;
+        left: -25px;
+        transform: rotate(-125deg);
+    }
+
+    .cardmin4 {
+        position: absolute;
+        bottom: -55px;
+        left: 35%;
+        transform: rotate(-180deg);
+    }
+
+    .cardmin5 {
+        position: absolute;
+        bottom: -20px;
+        right: 0px;
+        transform: rotate(135deg);
+    }
+
+    .cardmin6 {
+        position: absolute;
+        top: 55%;
+        right: -45px;
+        transform: rotate(100deg);
+    }
+
+    .cardmin7 {
+        position: absolute;
+        top: 20px;
+        right: -40px;
+        transform: rotate(60deg);
+    }
+
+    .cardmin8 {
+        position: absolute;
+        top: -55px;
+        right: 60px;
+        transform: rotate(15deg);
+    }
+
+    .homePage4 {
+        padding: 50px 10px;
+    }
+
+    .pCard {
+        height: 60px;
+        overflow: hidden;
+        background-color: #9d9b9b72;
+        border-radius: 10px;
+        padding: 15px;
+        position: relative;
+        border: 1px solid yellow;
+    }
+    
+    .pCard.active {
+        height: min-content;
+    }
+   
+
+    
 
 
 
