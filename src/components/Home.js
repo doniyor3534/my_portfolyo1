@@ -5,8 +5,8 @@ import ReactPlayer from 'react-player/youtube'
 
 
 const Home = () => {
-     const { HomeCardsmass } = useSelector(state => state)
-     console.log(HomeCardsmass);
+     const { HomeCardsmass, portfolyoMassiv } = useSelector(state => state)
+     console.log(portfolyoMassiv);
      const [open, setOpen] = useState(false);
      const [confirmLoading, setConfirmLoading] = useState(false);
      const [modalText, setModalText] = useState('');
@@ -101,19 +101,70 @@ const Home = () => {
                <div className="homePage5 container">
                     <div className="imgCard">
                          <img src="./img/img1.jpg" alt="" className="im1" />
+                         <div className="socialCard">
+                              <div className="socialGroup">
+                                   <a href="#">a</a>
+                                   <a href="#">a</a>
+                                   <a href="#">a</a>
+                                   <a href="#">a</a>
+                              </div>
+                         </div>
                     </div>
                     <div className='imgtitle '>
                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur natus ratione nobis doloremque voluptas voluptatibus maiores facilis illo, velit quia! Asperiores nisi consectetur quas. Doloribus asperiores quae ipsam quaerat id culpa ipsa atque ratione, suscipit reiciendis fugiat ad unde incidunt cumque cum harum, voluptate a eius consectetur impedit exercitationem tempora quasi? Quod, veritatis. Ut recusandae nisi officiis soluta, non magnam similique illo. Harum minima, ducimus voluptatibus eveniet odio unde? </p>
                     </div>
-                    <div></div>
+                    <div className='imgtitle '>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur natus ratione nobis doloremque voluptas voluptatibus maiores facilis illo, velit quia! Asperiores nisi consectetur quas. Doloribus asperiores quae ipsam quaerat id culpa ipsa atque ratione, suscipit reiciendis fugiat ad unde incidunt cumque cum harum, voluptate a eius consectetur impedit exercitationem tempora quasi? Quod, veritatis. Ut recusandae nisi officiis soluta, non magnam similique illo. Harum minima, ducimus voluptatibus eveniet odio unde? </p>
+                    </div>
                     <div className="imgCard">
                          <img src="./img/img2.jpg" alt="" className="im2" />
+                         <div className="socialCard">
+                              <div className="socialGroup">
+                                   <a href="#">a</a>
+                                   <a href="#">a</a>
+                                   <a href="#">a</a>
+                                   <a href="#">a</a>
+                              </div>
+                         </div>
                     </div>
                     <div className="imgCard">
                          <img src="./img/img3.jpg" alt="" className="im3" />
+                         <div className="socialCard">
+                              <div className="socialGroup">
+                                   <a href="#">a</a>
+                                   <a href="#">a</a>
+                                   <a href="#">a</a>
+                                   <a href="#">a</a>
+                              </div>
+                         </div>
+                    </div>
+                    <div className='imgtitle '>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur natus ratione nobis doloremque voluptas voluptatibus maiores facilis illo, velit quia! Asperiores nisi consectetur quas. Doloribus asperiores quae ipsam quaerat id culpa ipsa atque ratione, suscipit reiciendis fugiat ad unde incidunt cumque cum harum, voluptate a eius consectetur impedit exercitationem tempora quasi? Quod, veritatis. Ut recusandae nisi officiis soluta, non magnam similique illo. Harum minima, ducimus voluptatibus eveniet odio unde? </p>
                     </div>
                </div>
                {/* //Page5 */}
+               {/* //Page6 */}
+               <div className="homePage6 ">
+                    <div className="container homePage6Cards">
+                         {
+                              portfolyoMassiv.map((val) => (
+                                   <div className="portfolyoCard">
+                                        <div className="carDimg">
+                                             <img src='./img/imgg.jpg' alt="" />
+                                             <p>{val.name}</p>
+                                        </div>
+                                        <div className="cardBtn">
+                                             <a href="#"> <button>link bilan utish</button></a>
+                                             <button>img Holatini korish</button>
+                                        </div>
+                                   </div>
+                              ))
+                         }
+
+                    </div>
+               </div>
+               {/* //Page6 */}
+               {/* //Page7 */}
           </div>
      );
 }
