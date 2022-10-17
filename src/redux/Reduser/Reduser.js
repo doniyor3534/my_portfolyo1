@@ -14,9 +14,13 @@ const initilstate = {
         {name:'React',img:"./img/github.png",video:`https://youtu.be/NAr4P7TsQgI`},
     ],
     portfolyoMassiv:[
-        {name:'Safari',link:'llll',img:'./img/imgg.jpg'},
+        {name:'AdminPanel',link:'https://adminpanelredux1.netlify.app',img:'./img/imgg.jpg'},
         {name:'Shop',link:'llll',img:'./img/imgg.jpg'},
         {name:'Crud',link:'llll',img:'./img/imgg.jpg'},
+        {name:'Redux',link:'llll',img:'./img/imgg.jpg'},
+        {name:'Redux',link:'llll',img:'./img/imgg.jpg'},
+        {name:'Redux',link:'llll',img:'./img/imgg.jpg'},
+        {name:'Redux',link:'llll',img:'./img/imgg.jpg'},
         {name:'Redux',link:'llll',img:'./img/imgg.jpg'},
     ]
 }

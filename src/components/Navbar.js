@@ -11,10 +11,10 @@ function Navbar() {
         <nav className='container'>
                 <Link to={"/"} className="nav_logo"><img src="./img/logo1.png" alt="" /></Link>
             <ul className={navcluch ?'active':''}>
-                <li><NavLink to={"/"}  activeClassName="active ">Home</NavLink></li>
-                <li><NavLink to={"/aboutme"} activeClassName="active ">About me</NavLink></li>
-                <li><NavLink to={"/portfolyo"} activeClassName="active ">Portfolio</NavLink></li>
-                <li><NavLink to={"/contact"} activeClassName="active ">Contact</NavLink></li>
+                <li><NavLink to={"/"}  activeClassName="active " onClick={()=>setNavcluch(!navcluch)}>Home</NavLink></li>
+                <li><NavLink to={"/aboutme"} activeClassName="active " onClick={()=>setNavcluch(!navcluch)}>About me</NavLink></li>
+                <li><NavLink to={"/portfolyo"} activeClassName="active " onClick={()=>setNavcluch(!navcluch)}>Portfolio</NavLink></li>
+                <li><NavLink to={"/contact"} activeClassName="active " onClick={()=>setNavcluch(!navcluch)}>Contact</NavLink></li>
             </ul>
             <button className='burger' onClick={()=>setNavcluch(!navcluch)}>{navcluch?<UpCircleOutlined />:<MenuOutlined />}</button>
         </nav>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Modal } from 'antd';
 import ReactPlayer from 'react-player/youtube'
+import { GithubOutlined, InstagramOutlined, SendOutlined, WhatsAppOutlined } from '@ant-design/icons';
 
 
 const Home = () => {
@@ -40,13 +41,17 @@ const Home = () => {
                }
           })
      }, [])
+     const [textOpen, setTextOpen] = useState(false)
+     const [textOpen2, setTextOpen2] = useState(false)
+     const [textOpen3, setTextOpen3] = useState(false)
+     const [textOpen4, setTextOpen4] = useState(false)
      return (
           <div className='Home container-fluid p-0'>
                {/* //Page1 */}
                <div className="homePge1 container ">
                     <div className="homeTitle">
-                         <h4>Hello</h4>
-                         <h2>My name is <br /> Doniyorbek Tursunov</h2>
+                         <h4>Salom</h4>
+                         <h2>Mening ismim <br /> Doniyorbek Tursunov</h2>
                          <p>Men bir yildan beri veb-dizayn, front-end va back-end sayt  <br /> ishlab chiqish bilan shug'ullanaman. <br /> Sizga veb-sayt , sayt tartibi yoki ehtimol kalit , veb-sayt kerakmi? Unda men bilan bog'laning</p>
                          <button className='btnContactme'>Contact me</button>
                     </div>
@@ -65,10 +70,10 @@ const Home = () => {
                               </div>
                          ))
                     }
-                    <div className={open ? "modal active" : "modal"}>
+                    <div className={open ? "Modal active" : "Modal"}>
                          <div className="modalCard" >
                               <button className="closemodal" onClick={() => setOpen(!open)}>x</button>
-                              <ReactPlayer url={modalText} />
+                              <ReactPlayer url={modalText} className="modalPlay" />
                          </div>
                     </div>
                </div>
@@ -90,59 +95,6 @@ const Home = () => {
                     </div>
                </div>
                {/* //Page3 */}
-               {/* //Page4 */}
-               <div className="homePage4 container">
-                    <div className={popen ? "pCard active" : "pCard"} onClick={() => setPopen(!popen)}>
-                         <p>Hammaga yana salom! Shunday qilib, siz mening ismim  Doniyorbek ekanligini allaqachon bilasiz. O'zim haqimda bir oz sozlasam: talaba, 25 yosh, sportchi-futbolchi, bolaligimdan ijodni yaxshi ko'rgaman, Uzbekistonning Namangan viloyatida  yashayman. Nima uchun dasturlash? Hammasi oddiy - bu menga yoqadi, kelajak kasbi, buning yordamida men o'zimni ta'minlay olaman va orzuimni amalga oshira olaman - sayohat, hozir men veb-dizayn, front-end va back-end ishlab chiqish, kalitlarga topshirilgan veb-saytlar bo'yicha ixtisoslashganman. Nega meni tanlashingiz kerak? Men har bir buyurtmaga katta mas'uliyat va mehr bilan yondashaman, chunki men  plagiat va beparvolikni istisno qilishni, loyihani, mijozni va uning maqsadli auditoriyasini to'liq o'rganishni, sifatli ishlashni, buyurtmani tez va o'ziga xos tarzda bajarishga harakat qilaman. iloji boricha barcha tahrirlar va istaklarni hisobga olgan holda. Menga ishoning, loyihangiz uchun maksimal daromad olasiz, asablaringizni va vaqtingizni tejaysiz. Agar siz men bilan ishlamoqchi bolsangiz, ko'proq narsani bilmoqchi bo'lsangiz yoki mening xizmatlarimdan foydalanmoqchi bo'lsangiz, men quyida barcha kontaktlarimni taqdim etaman.</p>
-                    </div>
-               </div>
-               {/* //Page4 */}
-               {/* //Page5 */}
-               <div className="homePage5 container">
-                    <div className="imgCard">
-                         <img src="./img/img1.jpg" alt="" className="im1" />
-                         <div className="socialCard">
-                              <div className="socialGroup">
-                                   <a href="#">a</a>
-                                   <a href="#">a</a>
-                                   <a href="#">a</a>
-                                   <a href="#">a</a>
-                              </div>
-                         </div>
-                    </div>
-                    <div className='imgtitle '>
-                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur natus ratione nobis doloremque voluptas voluptatibus maiores facilis illo, velit quia! Asperiores nisi consectetur quas. Doloribus asperiores quae ipsam quaerat id culpa ipsa atque ratione, suscipit reiciendis fugiat ad unde incidunt cumque cum harum, voluptate a eius consectetur impedit exercitationem tempora quasi? Quod, veritatis. Ut recusandae nisi officiis soluta, non magnam similique illo. Harum minima, ducimus voluptatibus eveniet odio unde? </p>
-                    </div>
-                    <div className='imgtitle '>
-                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur natus ratione nobis doloremque voluptas voluptatibus maiores facilis illo, velit quia! Asperiores nisi consectetur quas. Doloribus asperiores quae ipsam quaerat id culpa ipsa atque ratione, suscipit reiciendis fugiat ad unde incidunt cumque cum harum, voluptate a eius consectetur impedit exercitationem tempora quasi? Quod, veritatis. Ut recusandae nisi officiis soluta, non magnam similique illo. Harum minima, ducimus voluptatibus eveniet odio unde? </p>
-                    </div>
-                    <div className="imgCard">
-                         <img src="./img/img2.jpg" alt="" className="im2" />
-                         <div className="socialCard">
-                              <div className="socialGroup">
-                                   <a href="#">a</a>
-                                   <a href="#">a</a>
-                                   <a href="#">a</a>
-                                   <a href="#">a</a>
-                              </div>
-                         </div>
-                    </div>
-                    <div className="imgCard">
-                         <img src="./img/img3.jpg" alt="" className="im3" />
-                         <div className="socialCard">
-                              <div className="socialGroup">
-                                   <a href="#">a</a>
-                                   <a href="#">a</a>
-                                   <a href="#">a</a>
-                                   <a href="#">a</a>
-                              </div>
-                         </div>
-                    </div>
-                    <div className='imgtitle '>
-                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur natus ratione nobis doloremque voluptas voluptatibus maiores facilis illo, velit quia! Asperiores nisi consectetur quas. Doloribus asperiores quae ipsam quaerat id culpa ipsa atque ratione, suscipit reiciendis fugiat ad unde incidunt cumque cum harum, voluptate a eius consectetur impedit exercitationem tempora quasi? Quod, veritatis. Ut recusandae nisi officiis soluta, non magnam similique illo. Harum minima, ducimus voluptatibus eveniet odio unde? </p>
-                    </div>
-               </div>
-               {/* //Page5 */}
                {/* //Page6 */}
                <div className="homePage6 ">
                     <div className="container homePage6Cards">
@@ -154,8 +106,8 @@ const Home = () => {
                                              <p>{val.name}</p>
                                         </div>
                                         <div className="cardBtn">
-                                             <a href="#"> <button>link bilan utish</button></a>
-                                             <button>img Holatini korish</button>
+                                             <a href="#"> <button className='linkbtn'>Git/hub</button></a>
+                                             <button className='imgbtn'>Demo</button>
                                         </div>
                                    </div>
                               ))
