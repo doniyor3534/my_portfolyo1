@@ -6,7 +6,7 @@
     list-style: none;
 }
 
-.Modal{
+.modal{
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -21,10 +21,13 @@
     transition: all 0.5s linear;
     display: none;
 }
-.Modal.active{
+.modal.active{
     opacity: 1;
     z-index: 5;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: fixed;
 }
 .modalCard{
     width: min-content;
@@ -649,7 +652,9 @@ nav a.active:before {
 .imgbtn:hover{
     color: var(--oq);
 }
-
+.portFolyotext{
+    color: white;
+}
 
 
 
@@ -922,7 +927,7 @@ nav a.active:before {
         padding: 0;
     }
     .modalPlay{
-        width: 350px !important;
+        width: 380px   !important;
     }
 
 

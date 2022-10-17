@@ -70,9 +70,9 @@ const Home = () => {
                               </div>
                          ))
                     }
-                    <div className={open ? "Modal active" : "Modal"}>
+                    <div className={open ? "modal active" : "modal"}>
                          <div className="modalCard" >
-                              <button className="closemodal" onClick={() => setOpen(!open)}>x</button>
+                              {/* <button className="closemodal" onClick={() => setOpen(!open)}>x</button> */}
                               <ReactPlayer url={modalText} className="modalPlay" />
                          </div>
                     </div>
@@ -102,11 +102,11 @@ const Home = () => {
                               portfolyoMassiv.map((val) => (
                                    <div className="portfolyoCard">
                                         <div className="carDimg">
-                                             <img src='./img/imgg.jpg' alt="" />
-                                             <p>{val.name}</p>
+                                             <img src={val.img} alt="" />
+                                             <p className='portFolyotext'>{val.name}</p>
                                         </div>
                                         <div className="cardBtn">
-                                             <a href="#"> <button className='linkbtn'>Git/hub</button></a>
+                                             <a href="#"> <button className='linkbtn'>Github</button></a>
                                              <button className='imgbtn'>Demo</button>
                                         </div>
                                    </div>
