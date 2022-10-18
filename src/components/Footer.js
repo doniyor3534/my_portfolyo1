@@ -1,8 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import ScrollToTop from "react-scroll-to-top";
 
 
-const Footer= ()=> {
+const Footer = () => {
     return (
         <div className='footer container'>
             <ul>
@@ -18,7 +19,10 @@ const Footer= ()=> {
                 <li><p>Calls: +99899 - 110 - 11 -97:</p></li>
             </ul>
             <ul>
-                <li><NavLink to={"/"} className="nav_logo footerlogo"> <img src="./img/logo1.png" alt="" /> Notitanic <img src="./img/up_ctg.svg" alt="" className='footerTopIcon' /></NavLink></li>
+                <li className='toTopLi'>
+                    <NavLink to={'/'} className='nav_logo'> <img src="./img/logo1.png" alt="" className='nav_logo' />Notitanic</NavLink> 
+                    <button className='toTop'><img src="./img/up_ctg.svg" alt="" className='footerTopIcon' /> <ScrollToTop smooth /></button>
+                </li>
             </ul>
         </div>
     );

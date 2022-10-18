@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { Modal } from 'antd';
 import ReactPlayer from 'react-player/youtube'
-import { GithubOutlined, InstagramOutlined, SendOutlined, WhatsAppOutlined } from '@ant-design/icons';
-
 
 const Home = () => {
      const { HomeCardsmass, portfolyoMassiv } = useSelector(state => state)
@@ -50,8 +47,9 @@ const Home = () => {
                {/* //Page1 */}
                <div className="homePge1 container ">
                     <div className="homeTitle">
-                         <h4>Salom</h4>
-                         <h2>Mening ismim <br /> Doniyorbek Tursunov</h2>
+                   
+                         <h2 className='titleh2'>Salom!_Men... </h2>
+                         <h2  className='title2h2'>TursunovDoniyorbek </h2>
                          <p>Men bir yildan beri veb-dizayn, front-end va back-end sayt  <br /> ishlab chiqish bilan shug'ullanaman. <br /> Sizga veb-sayt , sayt tartibi yoki ehtimol kalit , veb-sayt kerakmi? Unda men bilan bog'laning</p>
                          <button className='btnContactme'>Contact me</button>
                     </div>
@@ -62,7 +60,20 @@ const Home = () => {
                {/* //Page1 */}
                {/* //Page2 */}
                <div className="homePage2 container">
-                    {
+                    <div className="titleText">
+                         <span>D</span>
+                         <span>a</span>
+                         <span>r</span>
+                         <span>s</span>
+                         <span>l</span>
+                         <span>i</span>
+                         <span>k</span>
+                         <span>l</span>
+                         <span>a</span>
+                         <span>r</span>
+                    </div>
+                   <div className="hom2cardss">
+                   {
                          HomeCardsmass.map((val) => (
                               <div className="homCard" key={val.id} onClick={() => modal(val.video)}>
                                    <img src={val.img} alt={val.name} />
@@ -76,6 +87,7 @@ const Home = () => {
                               <ReactPlayer url={modalText} className="modalPlay" />
                          </div>
                     </div>
+                   </div>
                </div>
                {/* //Page2 */}
                {/* //Page3 */}
@@ -106,8 +118,8 @@ const Home = () => {
                                              <p className='portFolyotext'>{val.name}</p>
                                         </div>
                                         <div className="cardBtn">
-                                             <a href="#"> <button className='linkbtn'>Github</button></a>
-                                             <button className='imgbtn'>Demo</button>
+                                             <a href={val.linkgithub}> <button className='linkbtn'>Github</button></a>
+                                             <a href={val.linkdemo}><button className='imgbtn'>Demo</button></a>
                                         </div>
                                    </div>
                               ))

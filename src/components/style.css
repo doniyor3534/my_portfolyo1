@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,30 @@
     text-decoration: none !important;
     list-style: none;
 }
-
+.toTop{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.toTopLi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+}
+.scroll-to-top{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
 .modal{
     width: 100%;
     height: 100vh;
@@ -103,6 +128,7 @@ nav a::after {
     width: 10px;
     height: 10px;
     background-color: orange;
+    box-shadow: 0 0 10px orange;
     border-radius: 50%;
 }
 
@@ -115,6 +141,7 @@ nav a::before {
     width: 100%;
     height: 1px;
     background-color: orange;
+    box-shadow: 0 0 10px orange;
     border-radius: 50%;
     transition: all .2s linear;
 }
@@ -166,15 +193,70 @@ nav a.active:before {
     color: var(--oq);
 }
 
-.homeTitle h2 {
+.titleh2,.title{
     font-weight: 700;
     font-size: 72px;
     line-height: 82px;
     display: flex;
     align-items: center;
-    color: var(--oq);
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    text-shadow: 0 0 5px #646464;
 }
-
+.titleh2::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: 'Salom!_Men...';
+    animation: titleh2 2s linear;
+    color:#111;
+    -webkit-text-stroke:1px #00C4F0;
+    text-shadow: 0 0 10px #00C4F0;
+    overflow: hidden;
+}
+@keyframes titleh2{
+    0%{width:0%}
+    1%{width:0%;
+       border-right:3px solid #00c4F0 
+    }
+    60%{border-right:3px solid #00c4F0 }
+    100%{width: 100%;}
+}
+.title2h2 {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 82px;
+    display: flex;
+    align-items: center;
+    color: #111;
+    position: relative;
+    text-shadow: 0 0 5px #646464;
+}
+.title2h2::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    content: 'TursunovDoniyorbek ';
+    animation: title2h2 2s linear;
+    animation-delay: 1.5s;
+    color:#111;
+    -webkit-text-stroke:1px #00C4F0;
+    text-shadow: 0 0 10px #00C4F0;
+    overflow: hidden;
+}
+@keyframes title2h2{
+    0%{width:0%}
+    1%{width:0%;
+       border-right:3px solid #00c4F0 
+    }
+    60%{border-right:3px solid #00c4F0 }
+    100%{width: 100%;}
+}
 .homeTitle p {
     font-weight: 300;
     font-size: 18px;
@@ -218,8 +300,74 @@ nav a.active:before {
 .anticon svg {
     color: orange !important;
 }
-
+/* ///////////////////////// */
+.titleText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    font-family: 'Bad Script';
+    font-size: 8em;
+    font-weight: 800;
+}
+.titleText span{
+    animation: textA 5s linear infinite;
+}
+@keyframes textA {
+    0% ,100%{
+        color: #FFF;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00C4F0,
+        0 0 30px #00C4F0,
+        0 0 50px #00C4F0,
+        0 0 80px #00C4F0,
+        0 0 100px #00C4F0,
+        0 0 150px #00C4F0;
+    }
+    5%,95%{
+        color: #111;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+}
+.titleText span:nth-child(1){
+    animation-delay: 0.5s;
+}
+.titleText span:nth-child(2){
+    animation-delay: 1s;
+}
+.titleText span:nth-child(3){
+    animation-delay: 1.5s;
+}
+.titleText span:nth-child(4){
+    animation-delay: 2s;
+}
+.titleText span:nth-child(5){
+    animation-delay: 2.5s;
+}
+.titleText span:nth-child(6){
+    animation-delay: 3s;
+}
+.titleText span:nth-child(7){
+    animation-delay: 3.5s;
+}
+.titleText span:nth-child(8){
+    animation-delay: 4s;
+}
+.titleText span:nth-child(9){
+    animation-delay: 4.5s;
+}
+.titleText span:nth-child(10){
+    animation-delay: 5s;
+}
+/* ///////////////////////// */
 .homePage2 {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    padding: 40px 0;
+}
+.hom2cardss{
     width: 100%;
     height: auto;
     display: grid;
@@ -227,7 +375,6 @@ nav a.active:before {
     gap: 10px;
     padding: 40px 0;
 }
-
 .homCard {
     width: 100%;
     height: 100%;
@@ -703,13 +850,8 @@ nav a.active:before {
     height: 60px;
 }
 
-.footerTopIcon {
-    transition: all 0.4s linear;
-}
 
-.footerTopIcon:hover {
-    transform: rotate(360deg);
-}
+
 
 
 
@@ -769,10 +911,12 @@ nav a.active:before {
         padding: 10px;
     }
 
-    .homePage2 {
+    .hom2cardss {
         grid-template-columns: repeat(1, auto);
     }
-
+    .titleText{
+        font-size: 4em;
+    }
     .footer {
         grid-template-columns: repeat(1, auto);
         gap: 25px;
