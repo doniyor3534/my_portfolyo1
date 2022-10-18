@@ -38,10 +38,12 @@ const Home = () => {
                }
           })
      }, [])
-     const [textOpen, setTextOpen] = useState(false)
-     const [textOpen2, setTextOpen2] = useState(false)
-     const [textOpen3, setTextOpen3] = useState(false)
-     const [textOpen4, setTextOpen4] = useState(false)
+     const [title,setTitle]=useState(false)
+    useEffect(()=>{
+     setTimeout(() => {
+          setTitle(true)
+     }, 1550);
+    },[])
      return (
           <div className='Home container-fluid p-0'>
                {/* //Page1 */}
@@ -49,7 +51,7 @@ const Home = () => {
                     <div className="homeTitle">
                    
                          <h2 className='titleh2'>Salom!_Men... </h2>
-                         <h2  className='title2h2'>TursunovDoniyorbek </h2>
+                         <h2  className={title?'title2h2 active':'title2h2'}>TursunovDoniyorbek </h2>
                          <p>Men bir yildan beri veb-dizayn, front-end va back-end sayt  <br /> ishlab chiqish bilan shug'ullanaman. <br /> Sizga veb-sayt , sayt tartibi yoki ehtimol kalit , veb-sayt kerakmi? Unda men bilan bog'laning</p>
                          <button className='btnContactme'>Contact me</button>
                     </div>
@@ -118,8 +120,8 @@ const Home = () => {
                                              <p className='portFolyotext'>{val.name}</p>
                                         </div>
                                         <div className="cardBtn">
-                                             <a href={val.linkgithub}> <button className='linkbtn'>Github</button></a>
-                                             <a href={val.linkdemo}><button className='imgbtn'>Demo</button></a>
+                                             <a href={val.linkgithub} target='blank'> <button className='linkbtn'>Github</button></a>
+                                             <a href={val.linkdemo} target='blank'><button className='imgbtn'>Demo</button></a>
                                         </div>
                                    </div>
                               ))

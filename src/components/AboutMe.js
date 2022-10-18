@@ -1,9 +1,95 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux';
+import ReactPlayer from 'react-player/youtube'
 
 const Aboutme=()=> {
+    const { HomeCardsmass, portfolyoMassiv } = useSelector(state => state)
+    console.log(portfolyoMassiv);
+    const [open, setOpen] = useState(false);
+    const [confirmLoading, setConfirmLoading] = useState(false);
+    const [modalText, setModalText] = useState('');
+    const [popen, setPopen] = useState(false)
+    const showModal = () => {
+         setOpen(true);
+    };
+
+    const handleOk = () => {
+         setModalText('The modal will be closed after two seconds');
+         setConfirmLoading(true);
+         setTimeout(() => {
+              setOpen(false);
+              setConfirmLoading(false);
+         }, 2000);
+    };
+
+    const handleCancel = () => {
+         console.log('Clicked cancel button');
+         setOpen(false);
+    };
+    const modal = (video) => {
+         setModalText(video)
+         showModal()
+    }
+    useEffect(() => {
+         window.addEventListener('click', (e) => {
+              //   console.log(e.target.getAttribute('class'));
+              if (e.target.getAttribute('class') === 'modal active') {
+                   setOpen(false)
+              }
+         })
+    }, [])
+
     return (
         <div>
-            aboutme
+             {/* //Page2 */}
+             <div className="homePage2 container">
+                    <div className="titleText">
+                         <span>D</span>
+                         <span>a</span>
+                         <span>r</span>
+                         <span>s</span>
+                         <span>l</span>
+                         <span>i</span>
+                         <span>k</span>
+                         <span>l</span>
+                         <span>a</span>
+                         <span>r</span>
+                    </div>
+                   <div className="hom2cardss">
+                   {
+                         HomeCardsmass.map((val) => (
+                              <div className="homCard" key={val.id} onClick={() => modal(val.video)}>
+                                   <img src={val.img} alt={val.name} />
+                                   <p>{val.name}</p>
+                              </div>
+                         ))
+                    }
+                    <div className={open ? "modal active" : "modal"}>
+                         <div className="modalCard" >
+                              {/* <button className="closemodal" onClick={() => setOpen(!open)}>x</button> */}
+                              <ReactPlayer url={modalText} className="modalPlay" />
+                         </div>
+                    </div>
+                   </div>
+               </div>
+               {/* //Page2 */}
+               {/* //Page3 */}
+               <div className="homePage3 container">
+                    <div className="cardmaxM">
+                         <div className="cardmax">
+                              <div className="cardmin cardmin1"><img src="./img/html.png" alt="" /></div>
+                              <div className="cardmin cardmin2"><img src="./img/css.png" alt="" /></div>
+                              <div className="cardmin cardmin3"><img src="./img/sass.png" alt="" /></div>
+                              <div className="cardmin cardmin4"><img src="./img/bootstrap.png" alt="" /></div>
+                              <div className="cardmin cardmin5"><img src="./img/javascript.png" alt="" /></div>
+                              <div className="cardmin cardmin6"><img src="./img/react.png" alt="" /></div>
+                              <div className="cardmin cardmin7"><img src="./img/redux.png" alt="" /></div>
+                              <div className="cardmin cardmin8"><img src="./img/github.png" alt="" /></div>
+                         </div>
+                         <div className="cardimg"><img src="./img/uzim.jpg" alt="" /></div>
+                    </div>
+               </div>
+               {/* //Page3 */}
         </div>
     )
 }
