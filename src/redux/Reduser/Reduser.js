@@ -4,14 +4,14 @@ import '../../components/style.css'
 
 const initilstate = {
     HomeCardsmass:[
-        {name:'React',img:"./img/html.png",video:`https://youtu.be/nUuuIRH0zy0`},
-        {name:'React',img:"./img/css.png",video:`https://youtu.be/0tOCbRQLi_0`},
-        {name:'React',img:"./img/sass.png",video:`https://youtu.be/eqGlcbkFvi8`},
-        {name:'React',img:"./img/bootstrap.png",video:`https://youtu.be/JOyACY-oRmo`},
-        {name:'React',img:"./img/javascript.png",video:`https://www.youtube.com/watch?v=9wPNESB02Xs&list=PLx6KiwtsRjcp75rLHEVH4TqD6Z4VCXGZ6`},
+        {name:'HTML',img:"./img/html.png",video:`https://youtu.be/nUuuIRH0zy0`},
+        {name:'Css',img:"./img/css.png",video:`https://youtu.be/0tOCbRQLi_0`},
+        {name:'Sass',img:"./img/sass.png",video:`https://youtu.be/eqGlcbkFvi8`},
+        {name:'Bootstrap',img:"./img/bootstrap.png",video:`https://youtu.be/JOyACY-oRmo`},
+        {name:'Javascript',img:"./img/javascript.png",video:`https://www.youtube.com/watch?v=9wPNESB02Xs&list=PLx6KiwtsRjcp75rLHEVH4TqD6Z4VCXGZ6`},
         {name:'React',img:"./img/react.png",video:`https://www.youtube.com/watch?v=Sz9keiVFcwg&list=PLx6KiwtsRjcp3IhKX4gYY8gcSIHg2bngl`},
-        {name:'React',img:"./img/redux.png",video:`https://youtu.be/EsmZUQsRhSM`},
-        {name:'React',img:"./img/github.png",video:`https://youtu.be/NAr4P7TsQgI`},
+        {name:'Redux',img:"./img/redux.png",video:`https://youtu.be/EsmZUQsRhSM`},
+        {name:'GitHub',img:"./img/github.png",video:`https://youtu.be/NAr4P7TsQgI`},
     ],
     portfolyoMassiv:[
         {name:'AdminPanel',linkgithub:'https://github.com/doniyor3534/AdminPanelredux1',linkdemo:'https://adminpanelredux1.netlify.app',img:'./img/p/admin.png'},
