@@ -14,6 +14,7 @@ const initilstate = {
         {name:'GitHub',img:"./img/github.png",video:`https://youtu.be/NAr4P7TsQgI`},
     ],
     portfolyoMassiv:[
+        {name:'UITCadmin',linkgithub:'https://github.com/rasuljonFullStackDev/uitc-potfolio-admin',linkdemo:'https://uitcadmin.netlify.app',img:'./img/p/uitcadmin.jpg'},
         {name:'AdminPanel',linkgithub:'https://github.com/doniyor3534/AdminPanelredux1',linkdemo:'https://adminpanelredux1.netlify.app',img:'./img/p/admin.png'},
         {name:'Safari',linkgithub:'https://github.com/doniyor3534/shopppp',linkdemo:'https://safari-shop.netlify.app',img:'./img/p/safari.png'},
         {name:'YouTube',linkgithub:'https://github.com/doniyor3534/YouTubeamalyot',linkdemo:'https://silly-eclair-c0964d.netlify.app',img:'./img/p/youtube.png'},
@@ -21,6 +22,8 @@ const initilstate = {
         {name:'SneksShop',linkgithub:'https://github.com/doniyor3534',linkdemo:'https://exquisite-marzipan-00618e.netlify.app',img:'./img/p/sneks.png'},
         {name:'Shop',linkgithub:'https://github.com/doniyor3534',linkdemo:'https://shiny-sorbet-6be780.netlify.app',img:'./img/p/shop.png'},
         {name:'Kofe',linkgithub:'https://github.com/doniyor3534',linkdemo:'https://doniyorbektursunov-bootstrap-css2.netlify.app',img:'./img/p/kofe.png'},
+        {name:'Servise',linkgithub:'https://github.com/doniyor3534',linkdemo:'https://idyllic-scone-584d85.netlify.app',img:'./img/p/brandname.png'},
+        {name:'Calculator',linkgithub:'https://github.com/doniyor3534/calculator',linkdemo:'https://calculatordoniyor3534.netlify.app',img:'./img/p/calculator.jpg'},
         {name:'Servise',linkgithub:'https://github.com/doniyor3534',linkdemo:'https://idyllic-scone-584d85.netlify.app',img:'./img/p/brandname.png'},
     ]
 }

@@ -8,13 +8,13 @@ const Contact = () => {
                 <label htmlFor="ism">Ism
                    <input id='ism' type="text" placeholder='ismingizni kiriting' />
                 </label>
-                <label htmlFor="email">Ism
+                <label htmlFor="email">email
                    <input id='email' type="email" placeholder='emailingizni kiriting' />
                 </label>
-                <label htmlFor="passwor1">Ism
+                <label htmlFor="passwor1">password1
                    <input id='password1' type="password" placeholder='parolingizni kiriting' />
                 </label>
-                <label htmlFor="password2">Ism
+                <label htmlFor="password2">password2
                    <input id='password2' type="password" placeholder='parolni takrorlang' />
                 </label>
                 <button type='submit' formTarget='blank' >Jonatish</button>
