@@ -14,6 +14,13 @@ const initilstate = {
         {name:'GitHub',img:"./img/github.png",video:`https://youtu.be/NAr4P7TsQgI`},
     ],
     portfolyoMassiv:[
+        {name:'Fiverr.com',linkgithub:'https://github.com/doniyor3534/Fiverr-clone',linkdemo:'https://fiverr3534.netlify.app',img:'./img/p/fiverr.jpg'},
+        {name:'Alisa shopping',linkgithub:'https://github.com/doniyor3534/alansopping',linkdemo:'https://alanshopp.netlify.app',img:'./img/p/alanai.jpg'},
+        {name:'Musr.uz',linkgithub:'https://github.com/doniyor3534/MusrUz',linkdemo:'https://musruz.netlify.app',img:'./img/p/musruz.jpg'},
+        {name:'ATTs-106-22',linkgithub:'https://att106.netlify.app',linkdemo:'https://att106.netlify.app',img:'./img/p/att.jpg'},
+        {name:'Al Saboq',linkgithub:'https://github.com/doniyor3534/Alsaboq',linkdemo:'https://alsaboq2.netlify.app',img:'./img/p/alsaboq.jpg'},
+        {name:'Mebeluz',linkgithub:'https://github.com/doniyor3534/Mebellar',linkdemo:'https://mebel3534.netlify.app/',img:'./img/p/mebeluz.jpg'},
+        {name:'Al Hikma',linkgithub:'https://github.com/doniyor3534/Alhikma',linkdemo:'https://alhikma.netlify.app',img:'./img/p/alhikma.jpg'},
         {name:'UITCadmin',linkgithub:'https://github.com/rasuljonFullStackDev/uitc-potfolio-admin',linkdemo:'https://uitcadmin.netlify.app',img:'./img/p/uitcadmin.jpg'},
         {name:'AdminPanel',linkgithub:'https://github.com/doniyor3534/AdminPanelredux1',linkdemo:'https://adminpanelredux1.netlify.app',img:'./img/p/admin.png'},
         {name:'Safari',linkgithub:'https://github.com/doniyor3534/shopppp',linkdemo:'https://safari-shop.netlify.app',img:'./img/p/safari.png'},
@@ -24,7 +31,6 @@ const initilstate = {
         {name:'Kofe',linkgithub:'https://github.com/doniyor3534',linkdemo:'https://doniyorbektursunov-bootstrap-css2.netlify.app',img:'./img/p/kofe.png'},
         {name:'Servise',linkgithub:'https://github.com/doniyor3534',linkdemo:'https://idyllic-scone-584d85.netlify.app',img:'./img/p/brandname.png'},
         {name:'Calculator',linkgithub:'https://github.com/doniyor3534/calculator',linkdemo:'https://calculatordoniyor3534.netlify.app',img:'./img/p/calculator.jpg'},
-        {name:'Servise',linkgithub:'https://github.com/doniyor3534',linkdemo:'https://idyllic-scone-584d85.netlify.app',img:'./img/p/brandname.png'},
     ]
 }
 

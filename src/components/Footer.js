@@ -21,7 +21,7 @@ const Footer = () => {
             <ul>
                 <li className='toTopLi'>
                     <NavLink to={'/'} className='nav_logo'> <img src="./img/logo1.png" alt="" className='nav_logo' />Notitanic</NavLink> 
-                    <button className='toTop'><img src="./img/up_ctg.svg" alt="" className='footerTopIcon' /> <ScrollToTop smooth /></button>
+                    <div className='toTop'><img src="./img/up_ctg.svg" alt="" className='footerTopIcon' /> <ScrollToTop smooth /></div>
                 </li>
             </ul>
         </div>

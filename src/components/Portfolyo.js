@@ -9,8 +9,8 @@ const Portfolyo = () => {
              <div className="homePage6 ">
                     <div className="container homePage6Cards">
                          {
-                              portfolyoMassiv.map((val) => (
-                                   <div className="portfolyoCard">
+                              portfolyoMassiv.map((val,i) => (
+                                   <div className="portfolyoCard"  key={i} >
                                         <div className="carDimg">
                                              <img src={val.img} alt="" />
                                              <p className='portFolyotext'>{val.name}</p>

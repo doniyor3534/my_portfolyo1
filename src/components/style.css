@@ -162,8 +162,8 @@ nav a.active:before {
 }
 
 .nav_logo img {
-    width: 100px;
-    height: 70px;
+    width: 60px;
+    height: 45px;
 }
 
 
@@ -276,6 +276,7 @@ nav a.active:before {
     box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
     border-radius: 6px;
     color: #1b1919;
+    border: none;
     font-weight: 500;
     margin-top: 20px;
     transition: all 0.2s linear;
@@ -363,6 +364,12 @@ nav a.active:before {
 }
 .titleText span:nth-child(10){
     animation-delay: 5s;
+}
+/* ///////////////////////// */
+/* ///////////////////////// */
+canvas{
+    width: 100% !important;
+    height: auto !important;
 }
 /* ///////////////////////// */
 .homePage2 {
@@ -804,7 +811,11 @@ nav a.active:before {
     color: var(--oq);
 }
 .portFolyotext{
-    color: white;
+    color: rgb(183, 183, 183);
+    /* position: absolute;
+    top: 10px;
+    left: 10px;
+    text-shadow: 0px 1px 1px  black ; */
 }
 
 /* /////////////contact */
@@ -816,6 +827,11 @@ nav a.active:before {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.mapcard{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
 }
 .boglanish{
     color: #4a595d;
@@ -829,6 +845,10 @@ nav a.active:before {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    color: white;
+}
+.successtext{
+    color: green;
 }
 .contactPage label{
     display: flex;
@@ -836,6 +856,15 @@ nav a.active:before {
     color: #00C4F0;
 }
 .contactPage input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    border-radius: 7px;
+    color: #b4b7b7;
+    background-color: rgba(128, 128, 128, 0.469);
+}
+.contactPage textarea{
     padding: 10px;
     border: none;
     outline: none;
