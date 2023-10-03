@@ -14,6 +14,7 @@ const initilstate = {
         {name:'GitHub',img:"./img/github.png",video:`https://youtu.be/NAr4P7TsQgI`},
     ],
     portfolyoMassiv:[
+        {name:'TexnoKG',linkgithub:'https://github.com/doniyor3534/TexnoKg',linkdemo:'https://texnokg.netlify.app',img:'./img/p/texnokg.jpg'},
         {name:'Fiverr.com',linkgithub:'https://github.com/doniyor3534/Fiverr-clone',linkdemo:'https://fiverr3534.netlify.app',img:'./img/p/fiverr.jpg'},
         {name:'Alisa shopping',linkgithub:'https://github.com/doniyor3534/alansopping',linkdemo:'https://alanshopp.netlify.app',img:'./img/p/alanai.jpg'},
         {name:'Musr.uz',linkgithub:'https://github.com/doniyor3534/MusrUz',linkdemo:'https://musruz.netlify.app',img:'./img/p/musruz.jpg'},
